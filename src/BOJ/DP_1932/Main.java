@@ -11,27 +11,22 @@ public class Main {
         FastReader fr = new FastReader();
 
         int n = fr.nextInt();
-        int[][] arr = new int[n+1][n+1];
-        int[][] dp = new int[n+1][n+1];
+        int[] arr = new int[n+1];
+        int[] dp = new int[n+1];
 
-
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <=i; j++) {
-                arr[i][j] = fr.nextInt();
-            }
-        }
         for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
-
-                dp[i][j]=max(dp[i-1][j-1],dp[i-1][j])+arr[i][j];
-            }
+            arr[i]=fr.nextInt();
         }
-        int max=0;
-        for(int i=1;i<=n;i++){
-            if(max<dp[n][i]) max=dp[n][i];
-        }
-        System.out.println(max);
 
+        dp[1]=arr[1];
+
+        if(n>=2){
+            dp[2]=arr[1]+arr[2];
+        }
+        for(int i=3;i<=n;i++) {
+                dp[i] = max(dp[i - 2],dp[i-3]+arr[i-1])+arr[i];
+        }
+        System.out.println(dp[n]);
 
     }
 }
