@@ -1,9 +1,9 @@
-package CD3.CD_3;
+package CD3;
 
 
 import java.util.*;
 
-class Solution {
+class Proc3_3 {
 
     public int solution(int[][] board) {
         int answer = 0;
@@ -33,7 +33,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution T = new Solution();
+        Proc3_3 T = new Proc3_3();
         System.out.println(T.solution(new int[][]{{1, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 1},{0, 0, 0, 0, 0}, {0, 0, 1, 0, 0}}));
         System.out.println(T.solution(new int[][]{{1,0,0,0,1}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0},{0, 0, 0, 0, 0}, {0, 0, 0, 0, 1}}));
         System.out.println(T.solution(new int[][]{{1, 0,0, 0, 1, 1}, {0, 1, 0 ,0,1,0}, {0, 1,0, 0, 0, 0},{0, 0, 0, 0,1, 0}, {0, 0, 0, 0, 0,1},{1, 0, 0, 0, 1, 1}}));

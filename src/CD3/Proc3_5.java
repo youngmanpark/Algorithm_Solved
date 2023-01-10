@@ -1,8 +1,8 @@
-package CD3.CD_5;
+package CD3;
 
 import java.util.*;
 
-class Solution {
+class Proc3_5 {
 
     public int solution(int[] nums, int k) {
         int answer = 0;
@@ -26,7 +26,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution T = new Solution();
+        Proc3_5 T = new Proc3_5();
         System.out.println(T.solution(new int[]{23, 87, 65, 12, 57, 32, 99, 81},32));
     }
 }

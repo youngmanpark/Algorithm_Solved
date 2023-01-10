@@ -1,8 +1,8 @@
 
-package CD3.CD_1;
+package CD3;
 
 import java.util.*;
-class Solution {
+class Proc3_1 {
 	public int[] solution(int[] nums){
 		int[] answer = new int[nums.length];
 		int[][] res = new int[nums.length][2];
@@ -24,7 +24,7 @@ class Solution {
 	}
 
 	public static void main(String[] args){
-		Solution T = new Solution();
+		Proc3_1 T = new Proc3_1();
 
         System.out.println(Arrays.toString(T.solution(new int[]{5,6,7,8,9})));
 	}

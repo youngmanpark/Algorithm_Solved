@@ -1,7 +1,7 @@
-package CD3.CD_7;
+package CD3;
 
 import java.util.*;
-class Solution {
+class Proc3_7 {
     public int Count(int[] nums, int dist){//배치할 말 마리수
         int cnt = 1;//한마리 박아두고 시작
         int prev = nums[0];//첫번쩨 박아둔 말
@@ -33,7 +33,7 @@ class Solution {
     }
 
     public static void main(String[] args){
-        Solution T = new Solution();
+        Proc3_7 T = new Proc3_7();
         System.out.println(T.solution(new int[]{5, 12, 34, 16, 18, 23, 29, 15}, 7));
     }
 }

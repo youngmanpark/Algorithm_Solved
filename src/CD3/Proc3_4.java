@@ -1,8 +1,8 @@
-package CD3.CD_4;
+package CD3;
 
 import java.util.*;
 
-class Solution {
+class Proc3_4 {
 
     public int solution(int[] board, long k) {
         int answer=0;
@@ -38,7 +38,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution T = new Solution();
+        Proc3_4 T = new Proc3_4();
         System.out.println(T.solution(new int[]{8, 5, 2, 9, 10, 7},30));
     }
 }

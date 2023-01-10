@@ -1,8 +1,8 @@
-package CD3.CD_6;
+package CD3;
 
 import java.util.*;
 
-class Solution {
+class Proc3_6 {
 
     public int Count(int[]nums,int len  ){
         int cnt = 0;
@@ -31,7 +31,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution T = new Solution();
+        Proc3_6 T = new Proc3_6();
         System.out.println(T.solution(new int[]{802, 743, 457, 539},11));
     }
 }
