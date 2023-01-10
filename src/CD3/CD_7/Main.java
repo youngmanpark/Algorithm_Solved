@@ -2,13 +2,13 @@ package CD3.CD_7;
 
 import java.util.*;
 class Solution {
-    public int Count(int[] nums, int dist){
-        int cnt = 1;
-        int prev = nums[0];
+    public int Count(int[] nums, int dist){//배치할 말 마리수
+        int cnt = 1;//한마리 박아두고 시작
+        int prev = nums[0];//첫번쩨 박아둔 말
         for(int i = 1; i < nums.length; i++){
-            if(nums[i] - prev >= dist){
-                cnt++;
-                prev = nums[i];
+            if(nums[i] - prev >= dist){//다음 마굿간과 처음 박아둔 마굿간의 거리 비교 시 최대거리(mid)보다 클시
+                cnt++;//마구간에 말 박아둠
+                prev = nums[i];//전의 말을 다음 마구간으로 박아둠
             }
         }
         return cnt;
