@@ -1,9 +1,9 @@
-package CD1.CD_4;
+package CD1;
 
 
 import java.util.Arrays;
 
-class Solution{
+class Proc1_4 {
     public String solution (int c, int r, int k){
         int[] answer = new int[2];
         int[] dx = {-1, 0, 1, 0};
@@ -42,7 +42,7 @@ class Solution{
 
     }
     public static void main(String []args){
-        Solution T = new Solution();
+        Proc1_4 T = new Proc1_4();
 
         System.out.println(T.solution(6,5,12));
 

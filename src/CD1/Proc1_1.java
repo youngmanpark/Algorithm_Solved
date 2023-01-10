@@ -1,6 +1,6 @@
-package CD1.CD_1;
+package CD1;
 
-class Solution{
+class Proc1_1 {
     public  char [] solution (int n,int [][] ladder){
         char[] answer = new char[n];
         for (int i = 0; i < n; i++  ) {
@@ -23,7 +23,7 @@ class Solution{
     }
     public static void main(String []args){
 
-        Solution T = new Solution();
+        Proc1_1 T = new Proc1_1();
         int n = 5;
         int[][] ladder = {{1, 3}, {2, 4}, {1, 4}};
         System.out.println(T.solution(n,ladder));

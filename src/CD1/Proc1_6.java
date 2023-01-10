@@ -1,9 +1,9 @@
-package CD1.CD_6;
+package CD1;
 
 
 import java.util.Arrays;
 
-class Solution{
+class Proc1_6 {
     public int solution (int []keypad, String pwd){
         int answer = 0;
         int[] dx = {-1, -1, 0, 1, 1, 1, 0, -1};
@@ -45,7 +45,7 @@ class Solution{
 
     }
     public static void main(String []args){
-        Solution T = new Solution();
+        Proc1_6 T = new Proc1_6();
         int[] arr = {2, 5, 3, 7, 1, 6, 4, 9, 8};
         System.out.println(T.solution(arr,"7596218"));
 

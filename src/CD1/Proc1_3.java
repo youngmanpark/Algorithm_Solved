@@ -1,6 +1,6 @@
-package CD1.CD_3;
+package CD1;
 
-class Solution{
+class Proc1_3 {
     public int solution (int [][] board){
         int[] answer = new int[2];
         int n = board.length;
@@ -64,7 +64,7 @@ class Solution{
 
     }
     public static void main(String []args){
-        Solution T = new Solution();
+        Proc1_3 T = new Proc1_3();
         int[][] arr = {{0, 0, 0, 0, 0, 0, 1, 0, 0, 0},
                 {0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
                 {0, 0, 0, 1, 0, 0, 0, 1, 0, 0},

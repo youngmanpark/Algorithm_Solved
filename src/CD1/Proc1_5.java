@@ -1,6 +1,6 @@
-package CD1.CD_5;
+package CD1;
 
-class Solution {
+class Proc1_5 {
     public int getMin(int[] fruit) {
         int min = 100;
         for (int x : fruit) {
@@ -58,7 +58,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution T = new Solution();
+        Proc1_5 T = new Proc1_5();
         System.out.println(T.solution(new int[][]{{10, 20, 30}, {12, 15, 20}, {20, 12, 15}, {15, 20, 10}, {10, 15, 10}}));
         System.out.println(T.solution(new int[][]{{10, 9, 11}, {15, 20, 25}}));
         System.out.println(T.solution(new int[][]{{0, 3, 27}, {20, 5, 5}, {19, 5, 6}, {10, 10, 10}, {15, 10, 5}, {3, 7, 20}}));

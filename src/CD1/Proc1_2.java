@@ -1,7 +1,7 @@
-package CD1.CD_2;
+package CD1;
 import java.util.Arrays;
 
-class Solution{
+class Proc1_2 {
     public String solution (int [][] board, int k){
         int[] answer = new int[2];
         int n = board.length;
@@ -32,7 +32,7 @@ class Solution{
     }
     public static void main(String []args){
 
-       Solution T = new Solution();
+       Proc1_2 T = new Proc1_2();
         int[][] arr = {{0, 0, 0, 0,0},
                 {0,1,1,0,0},
                 {0,0,0,0,0},
