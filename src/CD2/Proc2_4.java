@@ -1,10 +1,10 @@
-package CD2.CD_4;
+package CD2;
 
 
 
 import java.util.*;
 
-class Solution{
+class Proc2_4 {
     public String solution (String []arr, int k){
         String answer;
 
@@ -41,7 +41,7 @@ class Solution{
 
     }
     public static void main(String []args){
-       Solution T = new Solution();
+       Proc2_2 T = new Proc2_2();
         String [] arr  = {"john tom", "daniel luis", "john luis", "luis tom",
                 "daniel tom", "luis john"};
         System.out.println(T.solution(arr,2));

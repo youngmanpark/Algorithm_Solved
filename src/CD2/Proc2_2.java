@@ -1,10 +1,10 @@
-package CD2.CD_2;
+package CD2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-class Solution{
+class Proc2_2 {
     public int solution (String str){
         int answer = 0;
         ArrayList list = new ArrayList();
@@ -29,7 +29,7 @@ class Solution{
 
     }
     public static void main(String []args){
-        Solution T = new Solution();
+        Proc2_2 T = new Proc2_2();
         System.out.println(T.solution("aaabbbcc"));
 
     }

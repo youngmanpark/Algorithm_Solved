@@ -1,11 +1,9 @@
-package CD2.CD_3;
+package CD2;
 
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
-class Solution{
+class Proc2_3 {
     public int solution (int []arr,int m){
         int answer=0,sum=0;
 
@@ -26,7 +24,7 @@ class Solution{
 
     }
     public static void main(String []args){
-        Solution T = new Solution();
+        Proc2_2 T = new Proc2_2();
         int[] arr  = {1, 2, 3, -3, 1, 2};
         System.out.println(T.solution(arr,3));
 
