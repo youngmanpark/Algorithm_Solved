@@ -24,8 +24,8 @@ class Proc2_3 {
 
     }
     public static void main(String []args){
-        Proc2_2 T = new Proc2_2();
-        int[] arr  = {1, 2, 3, -3, 1, 2};
+        Proc2_3 T = new Proc2_3();
+        int[] arr  = {2, 5, 3, 4, 2, 3};
         System.out.println(T.solution(arr,3));
 
     }

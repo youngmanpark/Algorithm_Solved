@@ -1,9 +1,28 @@
 package CD4;
 
+import java.util.Arrays;
+
 public class Proc4_1 {
     public int solution(int[]nums){
 
         int answer = 0;
+
+        Arrays.sort(nums);
+        int right_idx = nums.length - 1;
+        int left_idx = 0;
+
+        while (right_idx >= left_idx) {
+            if (nums[right_idx] + nums[left_idx] > 5) {
+                answer++;
+                right_idx--;
+
+            } else {
+                answer++;
+                left_idx++;
+                right_idx--;
+
+            }
+        }
 
         return answer;
     }

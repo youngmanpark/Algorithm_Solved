@@ -41,7 +41,7 @@ class Proc2_4 {
 
     }
     public static void main(String []args){
-       Proc2_2 T = new Proc2_2();
+       Proc2_4 T = new Proc2_4();
         String [] arr  = {"john tom", "daniel luis", "john luis", "luis tom",
                 "daniel tom", "luis john"};
         System.out.println(T.solution(arr,2));

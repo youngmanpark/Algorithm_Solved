@@ -52,7 +52,7 @@ class Proc2_5 {
 
     }
     public static void main(String []args){
-        Proc2_2 T = new Proc2_2();
+        Proc2_5 T = new Proc2_5();
         System.out.println(Arrays.toString(T.solution(new String[]{"john 15:23", "daniel 09:30", "tom 07:23", "park 09:59", "luis 08:57"}, "08:33 09:45")));
         System.out.println(Arrays.toString(T.solution(new String[]{"ami 12:56", "daniel 15:00", "bob 19:59", "luis 08:57", "bill 17:35", "tom 07:23", "john 15:23", "park 09:59"}, "15:01 19:59")));
 
