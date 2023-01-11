@@ -5,10 +5,10 @@ import java.util.Collections;
 import java.util.LinkedList;
 
 public class Proc4_6 {
-        public int solution(int n, int[][] trans, int[][] bookings){
+        public int solution(int n, int[][] trains, int[][] bookings){
             int answer=0;
             int[] sum = new int[n+1];
-            for(int[] x : trans){
+            for(int[] x : trains){
                 sum[x[0]] += x[2];
                 sum[x[1]] -= x[2];
             }
