@@ -8,28 +8,28 @@ public class Proc4_6 {
         public int solution(int n, int[][] trains, int[][] bookings){
             int answer=0;
             int[] sum = new int[n+1];
-            for(int[] x : trains){
-                sum[x[0]] += x[2];
-                sum[x[1]] -= x[2];
+            for(int[] x : trains){ //기차 정보를 통해 내리는 구간 확인해서 인원수 더하기
+                sum[x[0]] += x[2];//탑승구간 인원만큼 더하기
+                sum[x[1]] -= x[2];//하차 구간 인원만큼 뺴기
             }
-            for(int i = 1; i <= n; i++){
+            for(int i = 1; i <= n; i++){//누적합을 해서 각 구간마다 총 최대 탑승인원 구하기
                 sum[i] += sum[i-1];
             }
-            int bN = bookings.length;
-            Arrays.sort(bookings, (a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
+
+            Arrays.sort(bookings, (a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]); // 정렬
             LinkedList<Integer> nums = new LinkedList<>();
             int ix = 0;
             for(int i = 1; i <= n; i++){
-                while(!nums.isEmpty() && nums.peek() == i){
+                while(!nums.isEmpty() && nums.peek() == i){// i번역에서 내릴사람
                     answer++;
                     nums.pollFirst();
                 }
-                while(ix < bN && bookings[ix][0] == i){
+                while(ix < bookings.length && bookings[ix][0] == i){//i번역에ㅓ 탈사람
                     nums.add(bookings[ix][1]);
                     ix++;
                 }
-                Collections.sort(nums);
-                while(nums.size() > sum[i]){
+                Collections.sort(nums);// 정렬 후
+                while(nums.size() > sum[i]){//열차 최대탑승인원 보다 많을 경우 젤 늦게 내리는 사람 뺴기
                     nums.pollLast();
                 }
             }
