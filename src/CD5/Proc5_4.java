@@ -1,8 +1,21 @@
 package CD5;
 
+import java.util.Arrays;
+
 public class Proc5_4 {
     public int solution(int []cost,int m) {
         int answer = 0;
+        int sum = 0;
+        int left=0;
+        for (int right = 0; right<cost.length;right++) {
+            sum += cost[right];
+            while (sum>m) {
+                sum -= cost[left];
+                left++;
+            }
+            answer = Math.max(answer, right - left + 1);
+        }
+
 
         return answer;
 
