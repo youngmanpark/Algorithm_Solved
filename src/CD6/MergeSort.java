@@ -1,18 +1,8 @@
 package CD6;
 
+public class MergeSort {
 
-import java.util.Arrays;
-
-public class Proc6_4 {
-
-    class Data{
-        public int num,idx, big;
-        public Data(int num, int idx, int big) {
-            this.num = num;
-            this.idx = idx;
-            this.big = big;
-        }
-    }    public void merge(int []arr, int left, int right) {
+    public void merge(int []arr, int left, int right) {
         int[] tmp = new int[arr.length];
 
         int L, R, k, i;
@@ -46,24 +36,19 @@ public class Proc6_4 {
         mergeSort(arr, mid + 1, right);
         merge(arr, left, right);
     }
-    Data[] a = new Data[10];
-    Data[] b = new Data[10];
 
     public String[] solution(int[] nums) {
-        int n = nums.length;
-        for (int i = 0; i < n; i++) {
-            a[i] = new Data(nums[i],i,0);
-        }
-
         String[] answer = {};
+        int n = nums.length;
+        mergeSort(nums,0, n - 1 );
 
-
+        for (int num : nums) System.out.print(num + " ");
         return answer;
 
     }
 
     public static void main(String[] args) {
-        Proc6_4 T = new Proc6_4();
-        System.out.println(Arrays.toString(T.solution(new int[]{5, 4, 2, 1, 3})));
+        MergeSort T = new MergeSort();
+        T.solution(new int[]{5, 4, 2, 1, 3});
     }
 }
