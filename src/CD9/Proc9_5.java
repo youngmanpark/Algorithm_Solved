@@ -14,7 +14,7 @@ public class Proc9_5 {
         }
         int[][] dist = new int[n][n];
         for (int i = 0; i < n; i++) {
-            Arrays.fill(dist[i],Integer.MAX_VALUE);
+            Arrays.fill(dist[i],1000000000);
             dist[i][i] = 0;
         }
         for (String x : roads) {
@@ -29,9 +29,7 @@ public class Proc9_5 {
                 for (int j = 0; j < n; j++) {
                     if (dist[i][k] + dist[k][j] < dist[i][j]) {
                         dist[i][j] = dist[i][k] + dist[k][j];
-                        System.out.print(dist[i][j]);
                     }
-                    System.out.println();
                 }
             }
         }
@@ -51,7 +49,7 @@ public class Proc9_5 {
         int num = -1;
         for(int i = 0; i < n; i++){
             int dis = dist[i][s] + dist[s][e];
-            if(dis >= Integer.MAX_VALUE) continue;
+            if(dis >= 1000000000) continue;
             int idx = lower_bound(carList.get(i), g);
             if(idx >= carList.get(i).size()) continue;
             int cost = carList.get(i).get(idx)[1];
